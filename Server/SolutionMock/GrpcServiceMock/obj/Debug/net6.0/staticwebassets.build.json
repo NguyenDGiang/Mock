@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "liF+taY8//ugBvV53uuyaDywqrdFBql5++yPPZQO0dI=",
+  "Source": "GrpcServiceMock",
+  "BasePath": "_content/GrpcServiceMock",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
