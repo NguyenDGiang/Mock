@@ -1,3 +1,3 @@
 obj\Debug\net6.0\Protos/Category.cs \
-obj\Debug\net6.0\Protos/CategoryGrpc.cs: C:/Users/giang.nguyen5/.nuget/packages/grpc.tools/2.40.0/build/native/include/google/protobuf/timestamp.proto\
+obj\Debug\net6.0\Protos/CategoryGrpc.cs: C:/Users/nguye/.nuget/packages/grpc.tools/2.40.0/build/native/include/google/protobuf/timestamp.proto\
  Protos/category.proto

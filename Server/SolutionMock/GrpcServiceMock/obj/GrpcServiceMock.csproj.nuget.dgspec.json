@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\HOC\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj": {}
+    "F:\\Mock\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj": {}
   },
   "projects": {
-    "Z:\\HOC\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj": {
+    "F:\\Mock\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\HOC\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj",
+        "projectUniqueName": "F:\\Mock\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj",
         "projectName": "GrpcServiceMock",
-        "projectPath": "Z:\\HOC\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj",
-        "packagesPath": "C:\\Users\\giang.nguyen5\\.nuget\\packages\\",
-        "outputPath": "Z:\\HOC\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\obj\\",
+        "projectPath": "F:\\Mock\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj",
+        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
+        "outputPath": "F:\\Mock\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\giang.nguyen5\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,8 +75,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -92,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
