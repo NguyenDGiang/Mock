@@ -3,14 +3,13 @@ using System.Collections.Generic;
 
 namespace GrpcServiceMock.Models
 {
-    public partial class Category
+    public partial class Category: BaseEntity
     {
         public Category()
         {
             Products = new HashSet<Product>();
         }
 
-        public int Id { get; set; }
         public string? Name { get; set; }
         public string? TagName { get; set; }
         public bool? Active { get; set; }

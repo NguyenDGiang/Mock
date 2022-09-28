@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\HOC\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj": {}
+    "Z:\\HOC\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj": {}
   },
   "projects": {
-    "Z:\\HOC\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj": {
+    "Z:\\HOC\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\HOC\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj",
+        "projectUniqueName": "Z:\\HOC\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj",
         "projectName": "GrpcServiceMock",
-        "projectPath": "Z:\\HOC\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj",
+        "projectPath": "Z:\\HOC\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj",
         "packagesPath": "C:\\Users\\giang.nguyen5\\.nuget\\packages\\",
-        "outputPath": "Z:\\HOC\\SolutionMock\\GrpcServiceMock\\obj\\",
+        "outputPath": "Z:\\HOC\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,6 +47,10 @@
             "Grpc.AspNetCore": {
               "target": "Package",
               "version": "[2.40.0, )"
+            },
+            "Grpc.AspNetCore.Web": {
+              "target": "Package",
+              "version": "[2.49.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

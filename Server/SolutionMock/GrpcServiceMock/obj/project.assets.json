@@ -68,6 +68,22 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Grpc.AspNetCore.Web/2.49.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Grpc.AspNetCore.Web.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Grpc.AspNetCore.Web.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Grpc.Core.Api/2.40.0": {
         "type": "package",
         "dependencies": {
@@ -1029,6 +1045,31 @@
         "lib/netcoreapp3.0/Grpc.AspNetCore.Server.ClientFactory.dll",
         "lib/netcoreapp3.0/Grpc.AspNetCore.Server.ClientFactory.pdb",
         "lib/netcoreapp3.0/Grpc.AspNetCore.Server.ClientFactory.xml",
+        "packageIcon.png"
+      ]
+    },
+    "Grpc.AspNetCore.Web/2.49.0": {
+      "sha512": "YK/wCgTc28j+iRKbpWYxMQIZjhHtVsTeCHeaJlS0TfO/8tWwXeQGr2dTJredflc72KdJ1Q1Wm/xYYpOIRkmPfg==",
+      "type": "package",
+      "path": "grpc.aspnetcore.web/2.49.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "grpc.aspnetcore.web.2.49.0.nupkg.sha512",
+        "grpc.aspnetcore.web.nuspec",
+        "lib/net5.0/Grpc.AspNetCore.Web.dll",
+        "lib/net5.0/Grpc.AspNetCore.Web.pdb",
+        "lib/net5.0/Grpc.AspNetCore.Web.xml",
+        "lib/net6.0/Grpc.AspNetCore.Web.dll",
+        "lib/net6.0/Grpc.AspNetCore.Web.pdb",
+        "lib/net6.0/Grpc.AspNetCore.Web.xml",
+        "lib/net7.0/Grpc.AspNetCore.Web.dll",
+        "lib/net7.0/Grpc.AspNetCore.Web.pdb",
+        "lib/net7.0/Grpc.AspNetCore.Web.xml",
+        "lib/netcoreapp3.0/Grpc.AspNetCore.Web.dll",
+        "lib/netcoreapp3.0/Grpc.AspNetCore.Web.pdb",
+        "lib/netcoreapp3.0/Grpc.AspNetCore.Web.xml",
         "packageIcon.png"
       ]
     },
@@ -2431,6 +2472,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Grpc.AspNetCore >= 2.40.0",
+      "Grpc.AspNetCore.Web >= 2.49.0",
       "Microsoft.EntityFrameworkCore >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
@@ -2444,11 +2486,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\HOC\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj",
+      "projectUniqueName": "Z:\\HOC\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj",
       "projectName": "GrpcServiceMock",
-      "projectPath": "Z:\\HOC\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj",
+      "projectPath": "Z:\\HOC\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\GrpcServiceMock.csproj",
       "packagesPath": "C:\\Users\\giang.nguyen5\\.nuget\\packages\\",
-      "outputPath": "Z:\\HOC\\SolutionMock\\GrpcServiceMock\\obj\\",
+      "outputPath": "Z:\\HOC\\Mock\\Server\\SolutionMock\\GrpcServiceMock\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2484,6 +2526,10 @@
           "Grpc.AspNetCore": {
             "target": "Package",
             "version": "[2.40.0, )"
+          },
+          "Grpc.AspNetCore.Web": {
+            "target": "Package",
+            "version": "[2.49.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

@@ -9,6 +9,7 @@
       "GrpcServiceMock/1.0.0": {
         "dependencies": {
           "Grpc.AspNetCore": "2.40.0",
+          "Grpc.AspNetCore.Web": "2.49.0",
           "Microsoft.EntityFrameworkCore": "6.0.9",
           "Microsoft.EntityFrameworkCore.Design": "6.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
@@ -53,6 +54,14 @@
           "lib/net6.0/Grpc.AspNetCore.Server.ClientFactory.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.40.0.0"
+          }
+        }
+      },
+      "Grpc.AspNetCore.Web/2.49.0": {
+        "runtime": {
+          "lib/net6.0/Grpc.AspNetCore.Web.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.49.0.0"
           }
         }
       },
@@ -563,6 +572,13 @@
       "sha512": "sha512-U+Cp5Mt7/xjFRIJhChjLXn0oUDisaBg3XzFkAUZE32dAa/dQN2gs9Qd9Gl51deStbci3J+W7CcfHgZ0y2Fwblw==",
       "path": "grpc.aspnetcore.server.clientfactory/2.40.0",
       "hashPath": "grpc.aspnetcore.server.clientfactory.2.40.0.nupkg.sha512"
+    },
+    "Grpc.AspNetCore.Web/2.49.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YK/wCgTc28j+iRKbpWYxMQIZjhHtVsTeCHeaJlS0TfO/8tWwXeQGr2dTJredflc72KdJ1Q1Wm/xYYpOIRkmPfg==",
+      "path": "grpc.aspnetcore.web/2.49.0",
+      "hashPath": "grpc.aspnetcore.web.2.49.0.nupkg.sha512"
     },
     "Grpc.Core.Api/2.40.0": {
       "type": "package",

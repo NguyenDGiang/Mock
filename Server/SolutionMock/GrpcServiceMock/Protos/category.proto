@@ -1,0 +1,40 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+option csharp_namespace = "GrpcServiceMock.Protos";
+service CatagoryService{
+	rpc Insert(CategoryProto) returns(CategoryResponse);
+	rpc GetAll(Empty) returns(Categories);
+	rpc GetPaging(PagingCategoryRequest ) returns(PagingCategoryResponse);
+	rpc GetById(CategoryRowIdFilter) returns(CategoryProto );
+    rpc Put(CategoryProto ) returns(CategoryResponse );
+    rpc Delete(CategoryRowIdFilter) returns(CategoryResponse);
+}
+message Empty{}
+message CategoryProto{
+	int32 Id = 1;
+	string Name = 2;
+	string TagName = 3;
+    bool Active = 4;
+    google.protobuf.Timestamp CreatedDate = 5;
+    google.protobuf.Timestamp UpdatedDate = 6;
+}
+message Categories{
+	repeated  CategoryProto items = 1;
+}
+message CategoryResponse{
+	CategoryProto Data = 1;
+	string Status = 2;
+}
+message PagingCategoryResponse{
+    int32 pageIndex =1;
+    int32 pageSize = 2;
+    int64 count = 3;
+    repeated CategoryProto data = 4;
+}
+message PagingCategoryRequest{
+    int32 pageIndex =1;
+    int32 pageSize = 2;
+}
+message CategoryRowIdFilter {
+    int32 Id = 1;
+}

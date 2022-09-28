@@ -3,9 +3,8 @@ using System.Collections.Generic;
 
 namespace GrpcServiceMock.Models
 {
-    public partial class ProductDetail
+    public partial class ProductDetail : BaseEntity
     {
-        public int Id { get; set; }
         public string? Price { get; set; }
         public string? Color { get; set; }
         public DateTime? StartingDate { get; set; }
