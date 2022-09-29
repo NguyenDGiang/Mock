@@ -1,0 +1,41 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+option csharp_namespace = "GrpcServiceMock.Protos";
+service ProductService{
+	rpc Insert(ProductProto) returns(ProductResponse);
+	rpc GetAll(EmptyProduct) returns(Products);
+	rpc GetPaging(PagingProductRequest ) returns(PagingProductResponse);
+	rpc GetById(ProductRowIdFilter) returns(ProductProto );
+    rpc Put(ProductProto) returns(ProductResponse);
+    rpc Delete(ProductRowIdFilter) returns(ProductResponse);
+}
+message EmptyProduct{}
+message ProductProto{
+	int32 Id = 1;
+	string Name = 2;
+	string TagName = 3;
+    bool Active = 4;
+    google.protobuf.Timestamp CreatedDate = 5;
+    google.protobuf.Timestamp UpdatedDate = 6;
+    int32 CategoryId = 7;
+}
+message Products{
+	repeated  ProductProto items = 1;
+}
+message ProductResponse{
+	ProductProto Data = 1;
+	string Status = 2;
+}
+message PagingProductResponse{
+    int32 pageIndex =1;
+    int32 pageSize = 2;
+    int64 count = 3;
+    repeated ProductProto data = 4;
+}
+message PagingProductRequest{
+    int32 pageIndex =1;
+    int32 pageSize = 2;
+}
+message ProductRowIdFilter {
+    int32 Id = 1;
+}
