@@ -118,7 +118,27 @@ namespace GrpcServiceMock.Services
    
 
         }
+        public override Task<CategoryProto> GetById(CategoryRowIdFilter request, ServerCallContext context)
+        {
 
+            var category = _repository.GetById(request.Id);
+            if (category == null)
+            {
+                throw new RpcException(new Status(StatusCode.NotFound, $"not find {request.Id}"));
+            }
+            var categoryProto = new CategoryProto()
+            {
+                Id = category.Id,
+                Name = category.Name,
+                CreatedDate = Timestamp.FromDateTime(DateTime.SpecifyKind(category.CreatedDate, DateTimeKind.Utc)),
+                Active = (bool)category.Active,
+                TagName = category.TagName,
+                UpdatedDate = Timestamp.FromDateTime(DateTime.SpecifyKind(category.UpdatedDate, DateTimeKind.Utc))
+
+            };
+
+            return Task.FromResult(categoryProto);
+        }
         public override Task<CategoryResponse> Put(CategoryProto request, ServerCallContext context)
         {
             try

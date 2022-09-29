@@ -25,42 +25,34 @@ namespace GrpcServiceMock.Protos {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChRQcm90b3MvcHJvZHVjdC5wcm90bxofZ29vZ2xlL3Byb3RvYnVmL3RpbWVz",
-            "dGFtcC5wcm90byIOCgxFbXB0eVByb2R1Y3QiXAoOUHJvZHVjdFJlcXVlc3QS",
-            "HgoHUHJvZHVjdBgBIAEoCzINLlByb2R1Y3RQcm90bxIqCg1Qcm9kdWN0RGV0",
-            "YWlsGAIgASgLMhMuUHJvZHVjdERldGFpbFByb3RvIigKCFByb2R1Y3RzEhwK",
-            "BWl0ZW1zGAEgAygLMg0uUHJvZHVjdFByb3RvIr8BCgxQcm9kdWN0UHJvdG8S",
-            "CgoCSWQYASABKAUSDAoETmFtZRgCIAEoCRIPCgdUYWdOYW1lGAMgASgJEg4K",
-            "BkFjdGl2ZRgEIAEoCBISCgpDYXRlZ29yeUlkGAUgASgFEi8KC0NyZWF0ZWRE",
-            "YXRlGAYgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIvCgtVcGRh",
-            "dGVkRGF0ZRgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAipgIK",
-            "ElByb2R1Y3REZXRhaWxQcm90bxIKCgJJZBgBIAEoBRINCgVQcmljZRgCIAEo",
-            "ARINCgVDb2xvchgDIAEoCRIwCgxTdGFydGluZ0RhdGUYBiABKAsyGi5nb29n",
-            "bGUucHJvdG9idWYuVGltZXN0YW1wEi8KC0Nsb3NpbmdEYXRlGAcgASgLMhou",
-            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIOCgZNYWRlQnkYCCABKAkSEQoJ",
-            "UHJvZHVjdElkGAkgASgFEi8KC0NyZWF0ZWREYXRlGAogASgLMhouZ29vZ2xl",
-            "LnByb3RvYnVmLlRpbWVzdGFtcBIvCgtVcGRhdGVkRGF0ZRgLIAEoCzIaLmdv",
-            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXAiPgoPUHJvZHVjdFJlc3BvbnNlEhsK",
-            "BERhdGEYASABKAsyDS5Qcm9kdWN0UHJvdG8SDgoGU3RhdHVzGAIgASgJImgK",
-            "FVBhZ2luZ1Byb2R1Y3RSZXNwb25zZRIRCglwYWdlSW5kZXgYASABKAUSEAoI",
-            "cGFnZVNpemUYAiABKAUSDQoFY291bnQYAyABKAMSGwoEZGF0YRgEIAMoCzIN",
-            "LlByb2R1Y3RQcm90byI7ChRQYWdpbmdQcm9kdWN0UmVxdWVzdBIRCglwYWdl",
-            "SW5kZXgYASABKAUSEAoIcGFnZVNpemUYAiABKAUiIAoSUHJvZHVjdFJvd0lk",
-            "RmlsdGVyEgoKAklkGAEgASgFMqMCCg5Qcm9kdWN0U2VydmljZRIpCgZJbnNl",
-            "cnQSDS5Qcm9kdWN0UHJvdG8aEC5Qcm9kdWN0UmVzcG9uc2USIgoGR2V0QWxs",
-            "Eg0uRW1wdHlQcm9kdWN0GgkuUHJvZHVjdHMSOgoJR2V0UGFnaW5nEhUuUGFn",
-            "aW5nUHJvZHVjdFJlcXVlc3QaFi5QYWdpbmdQcm9kdWN0UmVzcG9uc2USLQoH",
-            "R2V0QnlJZBITLlByb2R1Y3RSb3dJZEZpbHRlchoNLlByb2R1Y3RQcm90bxIm",
-            "CgNQdXQSDS5Qcm9kdWN0UHJvdG8aEC5Qcm9kdWN0UmVzcG9uc2USLwoGRGVs",
-            "ZXRlEhMuUHJvZHVjdFJvd0lkRmlsdGVyGhAuUHJvZHVjdFJlc3BvbnNlQhmq",
-            "AhZHcnBjU2VydmljZU1vY2suUHJvdG9zYgZwcm90bzM="));
+            "dGFtcC5wcm90byIOCgxFbXB0eVByb2R1Y3QiMAoOUHJvZHVjdFJlcXVlc3QS",
+            "HgoHUHJvZHVjdBgBIAEoCzINLlByb2R1Y3RQcm90byIoCghQcm9kdWN0cxIc",
+            "CgVpdGVtcxgBIAMoCzINLlByb2R1Y3RQcm90byK/AQoMUHJvZHVjdFByb3Rv",
+            "EgoKAklkGAEgASgFEgwKBE5hbWUYAiABKAkSDwoHVGFnTmFtZRgDIAEoCRIO",
+            "CgZBY3RpdmUYBCABKAgSEgoKQ2F0ZWdvcnlJZBgFIAEoBRIvCgtDcmVhdGVk",
+            "RGF0ZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLwoLVXBk",
+            "YXRlZERhdGUYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wIj4K",
+            "D1Byb2R1Y3RSZXNwb25zZRIbCgREYXRhGAEgASgLMg0uUHJvZHVjdFByb3Rv",
+            "Eg4KBlN0YXR1cxgCIAEoCSJoChVQYWdpbmdQcm9kdWN0UmVzcG9uc2USEQoJ",
+            "cGFnZUluZGV4GAEgASgFEhAKCHBhZ2VTaXplGAIgASgFEg0KBWNvdW50GAMg",
+            "ASgDEhsKBGRhdGEYBCADKAsyDS5Qcm9kdWN0UHJvdG8iOwoUUGFnaW5nUHJv",
+            "ZHVjdFJlcXVlc3QSEQoJcGFnZUluZGV4GAEgASgFEhAKCHBhZ2VTaXplGAIg",
+            "ASgFIiAKElByb2R1Y3RSb3dJZEZpbHRlchIKCgJJZBgBIAEoBTKjAgoOUHJv",
+            "ZHVjdFNlcnZpY2USKQoGSW5zZXJ0Eg0uUHJvZHVjdFByb3RvGhAuUHJvZHVj",
+            "dFJlc3BvbnNlEiIKBkdldEFsbBINLkVtcHR5UHJvZHVjdBoJLlByb2R1Y3Rz",
+            "EjoKCUdldFBhZ2luZxIVLlBhZ2luZ1Byb2R1Y3RSZXF1ZXN0GhYuUGFnaW5n",
+            "UHJvZHVjdFJlc3BvbnNlEi0KB0dldEJ5SWQSEy5Qcm9kdWN0Um93SWRGaWx0",
+            "ZXIaDS5Qcm9kdWN0UHJvdG8SJgoDUHV0Eg0uUHJvZHVjdFByb3RvGhAuUHJv",
+            "ZHVjdFJlc3BvbnNlEi8KBkRlbGV0ZRITLlByb2R1Y3RSb3dJZEZpbHRlchoQ",
+            "LlByb2R1Y3RSZXNwb25zZUIZqgIWR3JwY1NlcnZpY2VNb2NrLlByb3Rvc2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServiceMock.Protos.EmptyProduct), global::GrpcServiceMock.Protos.EmptyProduct.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServiceMock.Protos.ProductRequest), global::GrpcServiceMock.Protos.ProductRequest.Parser, new[]{ "Product", "ProductDetail" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServiceMock.Protos.ProductRequest), global::GrpcServiceMock.Protos.ProductRequest.Parser, new[]{ "Product" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServiceMock.Protos.Products), global::GrpcServiceMock.Protos.Products.Parser, new[]{ "Items" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServiceMock.Protos.ProductProto), global::GrpcServiceMock.Protos.ProductProto.Parser, new[]{ "Id", "Name", "TagName", "Active", "CategoryId", "CreatedDate", "UpdatedDate" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServiceMock.Protos.ProductDetailProto), global::GrpcServiceMock.Protos.ProductDetailProto.Parser, new[]{ "Id", "Price", "Color", "StartingDate", "ClosingDate", "MadeBy", "ProductId", "CreatedDate", "UpdatedDate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServiceMock.Protos.ProductResponse), global::GrpcServiceMock.Protos.ProductResponse.Parser, new[]{ "Data", "Status" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServiceMock.Protos.PagingProductResponse), global::GrpcServiceMock.Protos.PagingProductResponse.Parser, new[]{ "PageIndex", "PageSize", "Count", "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcServiceMock.Protos.PagingProductRequest), global::GrpcServiceMock.Protos.PagingProductRequest.Parser, new[]{ "PageIndex", "PageSize" }, null, null, null, null),
@@ -237,7 +229,6 @@ namespace GrpcServiceMock.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ProductRequest(ProductRequest other) : this() {
       product_ = other.product_ != null ? other.product_.Clone() : null;
-      productDetail_ = other.productDetail_ != null ? other.productDetail_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -257,17 +248,6 @@ namespace GrpcServiceMock.Protos {
       }
     }
 
-    /// <summary>Field number for the "ProductDetail" field.</summary>
-    public const int ProductDetailFieldNumber = 2;
-    private global::GrpcServiceMock.Protos.ProductDetailProto productDetail_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::GrpcServiceMock.Protos.ProductDetailProto ProductDetail {
-      get { return productDetail_; }
-      set {
-        productDetail_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as ProductRequest);
@@ -282,7 +262,6 @@ namespace GrpcServiceMock.Protos {
         return true;
       }
       if (!object.Equals(Product, other.Product)) return false;
-      if (!object.Equals(ProductDetail, other.ProductDetail)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -290,7 +269,6 @@ namespace GrpcServiceMock.Protos {
     public override int GetHashCode() {
       int hash = 1;
       if (product_ != null) hash ^= Product.GetHashCode();
-      if (productDetail_ != null) hash ^= ProductDetail.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -311,10 +289,6 @@ namespace GrpcServiceMock.Protos {
         output.WriteRawTag(10);
         output.WriteMessage(Product);
       }
-      if (productDetail_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ProductDetail);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -328,10 +302,6 @@ namespace GrpcServiceMock.Protos {
         output.WriteRawTag(10);
         output.WriteMessage(Product);
       }
-      if (productDetail_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(ProductDetail);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -343,9 +313,6 @@ namespace GrpcServiceMock.Protos {
       int size = 0;
       if (product_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Product);
-      }
-      if (productDetail_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProductDetail);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -363,12 +330,6 @@ namespace GrpcServiceMock.Protos {
           Product = new global::GrpcServiceMock.Protos.ProductProto();
         }
         Product.MergeFrom(other.Product);
-      }
-      if (other.productDetail_ != null) {
-        if (productDetail_ == null) {
-          ProductDetail = new global::GrpcServiceMock.Protos.ProductDetailProto();
-        }
-        ProductDetail.MergeFrom(other.ProductDetail);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -391,13 +352,6 @@ namespace GrpcServiceMock.Protos {
             input.ReadMessage(Product);
             break;
           }
-          case 18: {
-            if (productDetail_ == null) {
-              ProductDetail = new global::GrpcServiceMock.Protos.ProductDetailProto();
-            }
-            input.ReadMessage(ProductDetail);
-            break;
-          }
         }
       }
     #endif
@@ -417,13 +371,6 @@ namespace GrpcServiceMock.Protos {
               Product = new global::GrpcServiceMock.Protos.ProductProto();
             }
             input.ReadMessage(Product);
-            break;
-          }
-          case 18: {
-            if (productDetail_ == null) {
-              ProductDetail = new global::GrpcServiceMock.Protos.ProductDetailProto();
-            }
-            input.ReadMessage(ProductDetail);
             break;
           }
         }
@@ -1000,502 +947,6 @@ namespace GrpcServiceMock.Protos {
 
   }
 
-  public sealed partial class ProductDetailProto : pb::IMessage<ProductDetailProto>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<ProductDetailProto> _parser = new pb::MessageParser<ProductDetailProto>(() => new ProductDetailProto());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<ProductDetailProto> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcServiceMock.Protos.ProductReflection.Descriptor.MessageTypes[4]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ProductDetailProto() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ProductDetailProto(ProductDetailProto other) : this() {
-      id_ = other.id_;
-      price_ = other.price_;
-      color_ = other.color_;
-      startingDate_ = other.startingDate_ != null ? other.startingDate_.Clone() : null;
-      closingDate_ = other.closingDate_ != null ? other.closingDate_.Clone() : null;
-      madeBy_ = other.madeBy_;
-      productId_ = other.productId_;
-      createdDate_ = other.createdDate_ != null ? other.createdDate_.Clone() : null;
-      updatedDate_ = other.updatedDate_ != null ? other.updatedDate_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ProductDetailProto Clone() {
-      return new ProductDetailProto(this);
-    }
-
-    /// <summary>Field number for the "Id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "Price" field.</summary>
-    public const int PriceFieldNumber = 2;
-    private double price_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public double Price {
-      get { return price_; }
-      set {
-        price_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "Color" field.</summary>
-    public const int ColorFieldNumber = 3;
-    private string color_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Color {
-      get { return color_; }
-      set {
-        color_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "StartingDate" field.</summary>
-    public const int StartingDateFieldNumber = 6;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp startingDate_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp StartingDate {
-      get { return startingDate_; }
-      set {
-        startingDate_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "ClosingDate" field.</summary>
-    public const int ClosingDateFieldNumber = 7;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp closingDate_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp ClosingDate {
-      get { return closingDate_; }
-      set {
-        closingDate_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "MadeBy" field.</summary>
-    public const int MadeByFieldNumber = 8;
-    private string madeBy_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string MadeBy {
-      get { return madeBy_; }
-      set {
-        madeBy_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "ProductId" field.</summary>
-    public const int ProductIdFieldNumber = 9;
-    private int productId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ProductId {
-      get { return productId_; }
-      set {
-        productId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "CreatedDate" field.</summary>
-    public const int CreatedDateFieldNumber = 10;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp createdDate_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp CreatedDate {
-      get { return createdDate_; }
-      set {
-        createdDate_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "UpdatedDate" field.</summary>
-    public const int UpdatedDateFieldNumber = 11;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp updatedDate_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp UpdatedDate {
-      get { return updatedDate_; }
-      set {
-        updatedDate_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as ProductDetailProto);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(ProductDetailProto other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Id != other.Id) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Price, other.Price)) return false;
-      if (Color != other.Color) return false;
-      if (!object.Equals(StartingDate, other.StartingDate)) return false;
-      if (!object.Equals(ClosingDate, other.ClosingDate)) return false;
-      if (MadeBy != other.MadeBy) return false;
-      if (ProductId != other.ProductId) return false;
-      if (!object.Equals(CreatedDate, other.CreatedDate)) return false;
-      if (!object.Equals(UpdatedDate, other.UpdatedDate)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (Price != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Price);
-      if (Color.Length != 0) hash ^= Color.GetHashCode();
-      if (startingDate_ != null) hash ^= StartingDate.GetHashCode();
-      if (closingDate_ != null) hash ^= ClosingDate.GetHashCode();
-      if (MadeBy.Length != 0) hash ^= MadeBy.GetHashCode();
-      if (ProductId != 0) hash ^= ProductId.GetHashCode();
-      if (createdDate_ != null) hash ^= CreatedDate.GetHashCode();
-      if (updatedDate_ != null) hash ^= UpdatedDate.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (Price != 0D) {
-        output.WriteRawTag(17);
-        output.WriteDouble(Price);
-      }
-      if (Color.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Color);
-      }
-      if (startingDate_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(StartingDate);
-      }
-      if (closingDate_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(ClosingDate);
-      }
-      if (MadeBy.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(MadeBy);
-      }
-      if (ProductId != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(ProductId);
-      }
-      if (createdDate_ != null) {
-        output.WriteRawTag(82);
-        output.WriteMessage(CreatedDate);
-      }
-      if (updatedDate_ != null) {
-        output.WriteRawTag(90);
-        output.WriteMessage(UpdatedDate);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (Price != 0D) {
-        output.WriteRawTag(17);
-        output.WriteDouble(Price);
-      }
-      if (Color.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Color);
-      }
-      if (startingDate_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(StartingDate);
-      }
-      if (closingDate_ != null) {
-        output.WriteRawTag(58);
-        output.WriteMessage(ClosingDate);
-      }
-      if (MadeBy.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(MadeBy);
-      }
-      if (ProductId != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(ProductId);
-      }
-      if (createdDate_ != null) {
-        output.WriteRawTag(82);
-        output.WriteMessage(CreatedDate);
-      }
-      if (updatedDate_ != null) {
-        output.WriteRawTag(90);
-        output.WriteMessage(UpdatedDate);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
-      }
-      if (Price != 0D) {
-        size += 1 + 8;
-      }
-      if (Color.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Color);
-      }
-      if (startingDate_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartingDate);
-      }
-      if (closingDate_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClosingDate);
-      }
-      if (MadeBy.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(MadeBy);
-      }
-      if (ProductId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ProductId);
-      }
-      if (createdDate_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreatedDate);
-      }
-      if (updatedDate_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpdatedDate);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(ProductDetailProto other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-      if (other.Price != 0D) {
-        Price = other.Price;
-      }
-      if (other.Color.Length != 0) {
-        Color = other.Color;
-      }
-      if (other.startingDate_ != null) {
-        if (startingDate_ == null) {
-          StartingDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        StartingDate.MergeFrom(other.StartingDate);
-      }
-      if (other.closingDate_ != null) {
-        if (closingDate_ == null) {
-          ClosingDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        ClosingDate.MergeFrom(other.ClosingDate);
-      }
-      if (other.MadeBy.Length != 0) {
-        MadeBy = other.MadeBy;
-      }
-      if (other.ProductId != 0) {
-        ProductId = other.ProductId;
-      }
-      if (other.createdDate_ != null) {
-        if (createdDate_ == null) {
-          CreatedDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        CreatedDate.MergeFrom(other.CreatedDate);
-      }
-      if (other.updatedDate_ != null) {
-        if (updatedDate_ == null) {
-          UpdatedDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        UpdatedDate.MergeFrom(other.UpdatedDate);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 17: {
-            Price = input.ReadDouble();
-            break;
-          }
-          case 26: {
-            Color = input.ReadString();
-            break;
-          }
-          case 50: {
-            if (startingDate_ == null) {
-              StartingDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(StartingDate);
-            break;
-          }
-          case 58: {
-            if (closingDate_ == null) {
-              ClosingDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(ClosingDate);
-            break;
-          }
-          case 66: {
-            MadeBy = input.ReadString();
-            break;
-          }
-          case 72: {
-            ProductId = input.ReadInt32();
-            break;
-          }
-          case 82: {
-            if (createdDate_ == null) {
-              CreatedDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(CreatedDate);
-            break;
-          }
-          case 90: {
-            if (updatedDate_ == null) {
-              UpdatedDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(UpdatedDate);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 17: {
-            Price = input.ReadDouble();
-            break;
-          }
-          case 26: {
-            Color = input.ReadString();
-            break;
-          }
-          case 50: {
-            if (startingDate_ == null) {
-              StartingDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(StartingDate);
-            break;
-          }
-          case 58: {
-            if (closingDate_ == null) {
-              ClosingDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(ClosingDate);
-            break;
-          }
-          case 66: {
-            MadeBy = input.ReadString();
-            break;
-          }
-          case 72: {
-            ProductId = input.ReadInt32();
-            break;
-          }
-          case 82: {
-            if (createdDate_ == null) {
-              CreatedDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(CreatedDate);
-            break;
-          }
-          case 90: {
-            if (updatedDate_ == null) {
-              UpdatedDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(UpdatedDate);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
   public sealed partial class ProductResponse : pb::IMessage<ProductResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1508,7 +959,7 @@ namespace GrpcServiceMock.Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcServiceMock.Protos.ProductReflection.Descriptor.MessageTypes[5]; }
+      get { return global::GrpcServiceMock.Protos.ProductReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1725,7 +1176,7 @@ namespace GrpcServiceMock.Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcServiceMock.Protos.ProductReflection.Descriptor.MessageTypes[6]; }
+      get { return global::GrpcServiceMock.Protos.ProductReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1994,7 +1445,7 @@ namespace GrpcServiceMock.Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcServiceMock.Protos.ProductReflection.Descriptor.MessageTypes[7]; }
+      get { return global::GrpcServiceMock.Protos.ProductReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2202,7 +1653,7 @@ namespace GrpcServiceMock.Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::GrpcServiceMock.Protos.ProductReflection.Descriptor.MessageTypes[8]; }
+      get { return global::GrpcServiceMock.Protos.ProductReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -26,7 +26,7 @@ function Category() {
   });
   const [Name, setName] = useState("");
   const [TagName, setTagName] = useState("");
-  const [Active, setActive] = useState(false);
+  const [Active, setActive] = useState(true);
   const [CategoryId, setCategoryId] = useState(false);
   const [Message, setMessage] = useState("");
   const onGetAll = (index = 1) => {

@@ -14,7 +14,6 @@ message EmptyProduct {
 }
 message ProductRequest {
     ProductProto Product = 1;
-    ProductDetailProto ProductDetail = 2; 
 }
 message Products{
 	repeated ProductProto items = 1;
@@ -27,17 +26,6 @@ message ProductProto{
     int32 CategoryId = 5;
     google.protobuf.Timestamp CreatedDate = 6;
     google.protobuf.Timestamp UpdatedDate = 7;
-}
-message ProductDetailProto{
-	int32 Id = 1;
-    double Price = 2;
-    string Color = 3;
-    google.protobuf.Timestamp StartingDate = 6;
-    google.protobuf.Timestamp ClosingDate = 7;
-    string MadeBy = 8;
-    int32 ProductId = 9;
-    google.protobuf.Timestamp CreatedDate = 10;
-    google.protobuf.Timestamp UpdatedDate = 11;
 }
 message ProductResponse{
     ProductProto Data = 1;
