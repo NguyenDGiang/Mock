@@ -1,0 +1,58 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+option csharp_namespace = "GrpcServiceMock.Protos";
+service ProductService{
+	rpc Insert(ProductProto) returns(ProductResponse);
+    rpc GetAll(EmptyProduct) returns(Products);
+	rpc GetPaging(PagingProductRequest ) returns(PagingProductResponse);
+	rpc GetById(ProductRowIdFilter) returns(ProductProto );
+    rpc Put(ProductProto ) returns(ProductResponse );
+    rpc Delete(ProductRowIdFilter) returns(ProductResponse);
+	
+}
+message EmptyProduct { 
+}
+message ProductRequest {
+    ProductProto Product = 1;
+    ProductDetailProto ProductDetail = 2; 
+}
+message Products{
+	repeated ProductProto items = 1;
+}
+message ProductProto{
+	int32 Id = 1;
+	string Name = 2;
+	string TagName = 3;
+    bool Active = 4;
+    int32 CategoryId = 5;
+    google.protobuf.Timestamp CreatedDate = 6;
+    google.protobuf.Timestamp UpdatedDate = 7;
+}
+message ProductDetailProto{
+	int32 Id = 1;
+    double Price = 2;
+    string Color = 3;
+    google.protobuf.Timestamp StartingDate = 6;
+    google.protobuf.Timestamp ClosingDate = 7;
+    string MadeBy = 8;
+    int32 ProductId = 9;
+    google.protobuf.Timestamp CreatedDate = 10;
+    google.protobuf.Timestamp UpdatedDate = 11;
+}
+message ProductResponse{
+    ProductProto Data = 1;
+	string Status = 2;
+}
+message PagingProductResponse{
+    int32 pageIndex =1;
+    int32 pageSize = 2;
+    int64 count = 3;
+    repeated ProductProto data = 4;
+}
+message PagingProductRequest{
+    int32 pageIndex =1;
+    int32 pageSize = 2;
+}
+message ProductRowIdFilter {
+    int32 Id = 1;
+}
